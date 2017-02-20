@@ -19,7 +19,7 @@ boolean pffff = true;
 boolean letFloat = false;
 int duration = 20;
 boolean drawGraph = false;
-XML tempXML; 
+XML tempXML;
 boolean showConnected = false;
 int     showWallConn  = 0;
 
@@ -80,7 +80,7 @@ void draw() {
     println("Anzahl der Waende "+WallSystem.size()+" und als Nodes "+WallSystem.nodes.size() + ". Dazu sind "+ WallSystem.EdgeCount() + " Edges vorhanden.");
   }
   Mouse = new PVector(0, 0, 0);
-  
+
   PVector c = WallSystem.getAllNodes().get(50).center();
   PVector d = WallSystem.getAllNodes().get(50).velocity;
 
@@ -142,4 +142,3 @@ void keyPressed() {
     drawGraph=false;
   }
 }
-
